@@ -1,11 +1,28 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { connect } from 'react-redux'
 
-const LandingPage = () => {
+const LandingPage = (props) => {
+  useEffect(() => {
+    props.getData()
+  }, [])
+
   return (
     <>
-      <h1>Hello</h1>
+      <ul>
+        {props.articles.map(art => (
+          <li key={art.id}>{art.title}</li>
+        ))}
+      </ul>
     </>
   )
 }
 
-export default LandingPage
+const mapStateToProps = (state) => {
+  return {
+    articles: state.articles
+  }
+}
+
+export default connect(
+  mapStateToProps
+)(LandingPage)
