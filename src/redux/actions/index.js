@@ -1,10 +1,5 @@
-import { createStore, compose } from 'redux'
-import rootReducer from '../reducers/index'
-import thunk from 'redux-thunk'
+import { ADD_ARTICLE } from '../constants/index'
 
-const storeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
-
-const store = createStore(
-  rootReducer,
-  storeEnhancers(thunk)
-)
+export const addArticle = (payload) => {
+  return { type: ADD_ARTICLE, payload }
+}
