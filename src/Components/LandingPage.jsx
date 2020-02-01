@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
+import { getData } from '../redux/actions/index'
 
 const LandingPage = (props) => {
   useEffect(() => {
@@ -24,5 +25,6 @@ const mapStateToProps = (state) => {
 }
 
 export default connect(
-  mapStateToProps
+  mapStateToProps,
+  { getData }
 )(LandingPage)
