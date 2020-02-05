@@ -19,13 +19,15 @@ const LandingPage = props => {
           </li>
         ))}
       </ul>
+      {props.errorMessage ? <p id='error'>{props.errorMessage}</p> : null}
     </>
   )
 }
 
 const mapStateToProps = state => {
   return {
-    articles: state.articles
+    articles: state.articles,
+    errorMessage: state.errorMessage
   }
 }
 
