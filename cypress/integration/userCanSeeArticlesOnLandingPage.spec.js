@@ -1,15 +1,16 @@
 describe('User can view articles on landing page', () => {
   beforeEach(() => {
     cy.server()
+    cy.visit('http://localhost:3001')
+  })
+
+  it('successfully', () => {
     cy.route({
       method: 'GET',
       url: 'http://localhost:3000/api/v1/articles',
       response: 'fixture:articles.json'
     })
-    cy.visit('http://localhost:3001')
-  })
 
-  it('successfully', () => {
     cy.get('#article-1')
     .within(() => {
       cy.get('#title-1').should('contain', 'Leonardo da Vinci')
@@ -18,4 +19,14 @@ describe('User can view articles on landing page', () => {
       cy.get('#publish_date-1').should('contain', '20 October 2019')
     })
   })
+
+  it('unsuccessfully', () => {
+    cy.route({
+      method: 'GET',
+      url: 'http://localhost:3000/api/v1/articles',
+      response: 'fixture:articles-error.json'
+    })
+
+    cy.get('#error').should('contain', 'There are no articles here')
+  });
 })
