@@ -24,9 +24,10 @@ describe('User can view articles on landing page', () => {
     cy.route({
       method: 'GET',
       url: 'http://localhost:3000/api/v1/articles',
-      response: 'fixture:articles-error.json'
+      response: 'fixture:articles-error.json',
+      status: 400
     })
 
-    cy.get('#error').should('contain', 'There are no articles here')
+    cy.get('#error').should('contain', 'There are no articles available')
   });
 })
