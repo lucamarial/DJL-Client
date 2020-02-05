@@ -1,0 +1,2 @@
+export const ARTICLES_LOADED = 'ARTICLES_LOADED'
+export const DATA_ERROR = 'DATA_ERROR'
