@@ -13,7 +13,7 @@ const rootReducer = (state = initialState, action) => {
       })
     case DATA_ERROR:
       return Object.assign({}, state, {
-        errorMessage: state.errorMessage.concat(action.payload)
+        errorMessage: state.errorMessage.concat(action.payload.error_message)
       })
     default:
       return state
