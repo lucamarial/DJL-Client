@@ -27,7 +27,7 @@ const SingleArticle = (props) => {
 					</div>
 				</div>
 		  ))
-		: (error = errorMessage);
+		: (error = <p className='error'>{errorMessage}</p>);
 
 	return (
 		<>
