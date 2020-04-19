@@ -1,7 +1,8 @@
-import { ARTICLES_LOADED, DATA_ERROR } from "../constants";
+import { ARTICLES_LOADED, DATA_ERROR, SPECIFIC_ARTICLE } from "../constants";
 
 const initialState = {
   articles: [],
+  specificArticle: null,
   errorMessage: ''
 }
 
@@ -10,6 +11,10 @@ const rootReducer = (state = initialState, action) => {
     case ARTICLES_LOADED:
       return Object.assign({}, state, {
         articles: state.articles.concat(action.payload)
+      })
+    case SPECIFIC_ARTICLE:
+      return Object.assign({}, state, {
+        specificArticle: state.specificArticle.concat(action.payload)
       })
     case DATA_ERROR:
       return Object.assign({}, state, {

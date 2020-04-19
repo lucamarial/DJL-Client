@@ -15,7 +15,6 @@ export const getData = () => {
 export const getSpecificArticle = (articleId) => {
   return async dispatch => {
     try {
-      debugger
       let response = await axios.get(`http://localhost:3000/api/v1/articles/${articleId}`)
       return dispatch({ type: SPECIFIC_ARTICLE, payload: response.data.article })
     } catch(error) {
