@@ -13,13 +13,9 @@ const rootReducer = (state = initialState, action) => {
         articles: state.articles.concat(action.payload)
       })
     case SPECIFIC_ARTICLE:
-      return Object.assign({}, state, {
-        specificArticle: state.specificArticle.concat(action.payload)
-      })
+      return { ...state, specificArticle: action.payload }
     case DATA_ERROR:
-      return Object.assign({}, state, {
-        errorMessage: state.errorMessage.concat(action.payload.error_message)
-      })
+      return { ...state, errorMessage: action.payload.error_message }
     default:
       return state
   }
