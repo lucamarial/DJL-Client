@@ -10,7 +10,7 @@ const LandingPage = (props) => {
 
   return (
     <>
-      <ul>
+      <ul className='list articles'>
         {props.articles.map((art) => (
           <NavLink
             to={`/article/${art.id}`}
