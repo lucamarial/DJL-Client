@@ -5,24 +5,34 @@ import { getSpecificArticle } from '../redux/actions/index';
 
 const SingleArticle = (props) => {
 	let { id } = useParams();
-	let { specificArticle } = props;
+	let { specificArticle, errorMessage } = props;
+	let article, error;
 
 	useEffect(() => {
 		props.getSpecificArticle(id);
 	}, []);
 
+	specificArticle
+		? (article = (
+				<div id={`article-${specificArticle.id}`}>
+					<div id={`title-${specificArticle.id}`}>{specificArticle.title}</div>
+					<div id={`content-${specificArticle.id}`}>
+						{specificArticle.content}
+					</div>
+					<div id={`author-${specificArticle.id}`}>
+						{specificArticle.author}
+					</div>
+					<div id={`publish_date-${specificArticle.id}`}>
+						{specificArticle.publish_date}
+					</div>
+				</div>
+		  ))
+		: (error = errorMessage);
+
 	return (
 		<>
-			<div id={`article-${specificArticle.id}`}>
-				<div id={`title-${specificArticle.id}`}>{specificArticle.title}</div>
-				<div id={`content-${specificArticle.id}`}>
-					{specificArticle.content}
-				</div>
-				<div id={`author-${specificArticle.id}`}>{specificArticle.author}</div>
-				<div id={`publish_date-${specificArticle.id}`}>
-					{specificArticle.publish_date}
-				</div>
-			</div>
+			{article}
+			{error}
 		</>
 	);
 };
