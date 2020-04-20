@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
-import { getData } from '../redux/actions/index';
+import { getData } from '../../redux/actions/index';
 import { NavLink } from 'react-router-dom';
 
 const LandingPage = (props) => {

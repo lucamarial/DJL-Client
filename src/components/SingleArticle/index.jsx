@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router';
 import { connect } from 'react-redux';
-import { getSpecificArticle } from '../redux/actions/index';
+import { getSpecificArticle } from '../../redux/actions/index';
 
 const SingleArticle = (props) => {
 	let { id } = useParams();

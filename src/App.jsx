@@ -1,12 +1,12 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
-import LandingPage from './components/LandingPage'
+import AllArticles from './components/AllArticles'
 import SingleArticle from './components/SingleArticle'
 
 const App = () => {
   return (
     <div className="App">
-      <Route exact path='/' component={LandingPage} />
+      <Route exact path='/articles' component={AllArticles} />
       <Route exact path='/article/:id' component={SingleArticle} />
     </div>
   )
