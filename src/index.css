@@ -12,12 +12,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.sidebar {
-  width: 13em;
-  height: 100%;
-  position: fixed;
-}
-
 main {
   margin-left: 13em;
 }
