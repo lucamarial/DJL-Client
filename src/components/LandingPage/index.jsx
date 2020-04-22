@@ -1,11 +1,13 @@
-import React from 'react'
+import React from 'react';
 
 const LandingPage = () => {
   return (
     <>
-      <h1>Hello World</h1>
+      <main className='hey'>
+        <h1>Hello World</h1>
+      </main>
     </>
-  )
-}
+  );
+};
 
-export default LandingPage
+export default LandingPage;
