@@ -1,0 +1,22 @@
+.sidebar {
+  width: 13em;
+  height: 100%;
+  position: fixed;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: black;
+}
+
+.sidebar ul {
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sidebar li {
+  padding: .5em 1em;
+}
