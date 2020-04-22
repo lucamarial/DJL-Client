@@ -16,6 +16,10 @@
   padding: 0.5em 0;
 }
 
+.sidebar li .main {
+  font-weight: 700;
+}
+
 .sidebar a {
   padding-bottom: .2em;
 	text-decoration: none;
@@ -38,4 +42,8 @@
 
 .sidebar a:hover:after {
   width: 100%;
+}
+
+.sidebar a:focus {
+  color: #e7717d;
 }
