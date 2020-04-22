@@ -4,6 +4,11 @@
 	position: fixed;
 }
 
+.sidebar p {
+  font-size: 1.5rem;
+  margin: 1.5em 1em;
+}
+
 .sidebar ul {
 	padding: 0 1.5em;
 	list-style: none;
@@ -13,7 +18,7 @@
 }
 
 .sidebar li {
-  padding: 0.5em 0;
+  padding: 0.75em 0;
 }
 
 .sidebar li .main {
@@ -27,7 +32,7 @@
   position: relative;
 }
 
-.sidebar a:after {
+.sidebar ul a:after {
 	content: '';
   position: absolute;
   overflow: hidden;
@@ -40,10 +45,10 @@
 	transition: width 0.3s ease-out;
 }
 
-.sidebar a:hover:after {
+.sidebar ul a:hover:after {
   width: 100%;
 }
 
-.sidebar a:focus {
+.sidebar ul a:focus {
   color: #e7717d;
 }
