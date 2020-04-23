@@ -13,3 +13,14 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.header.container.one{
+  grid-column: 2 / 6;
+  grid-row: 2 / 3;
+}
+
+.header.container.one h1{
+  color: #e7717d;
+  text-decoration: underline;
+  font-size: 5rem;
+}
