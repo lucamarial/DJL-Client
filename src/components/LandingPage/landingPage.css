@@ -1,0 +1,15 @@
+.grid.landingpage{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(9, 17em);
+  width: 100%;
+}
+
+.img.one{
+  grid-column: 6 / 9;
+  grid-row: 1 / 4;
+  background: #e7717d;
+  background: url('../../images/fire-nation.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
