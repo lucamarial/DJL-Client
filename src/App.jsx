@@ -6,16 +6,16 @@ import AllArticles from './components/AllArticles';
 import SingleArticle from './components/SingleArticle';
 
 const App = () => {
-  return (
-    <>
-      <NavBar />
-      <main>
-        <Route exact path='/' component={LandingPage} />
-        <Route exact path='/articles' component={AllArticles} />
-        <Route exact path='/article/:id' component={SingleArticle} />
-      </main>
-    </>
-  );
+	return (
+		<div className='App'>
+			<NavBar />
+			<main>
+				<Route exact path='/' component={LandingPage} />
+				<Route exact path='/articles' component={AllArticles} />
+				<Route exact path='/article/:id' component={SingleArticle} />
+			</main>
+		</div>
+	);
 };
 
 export default App;
