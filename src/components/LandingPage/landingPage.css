@@ -14,13 +14,40 @@
   background-size: cover;
 }
 
+.img.two{
+  grid-column: 1 / 6;
+  grid-row: 4 / 7;
+  background: #e7717d;
+  background: url('../../images/floating.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 30%;
+}
+
 .header.container.one{
   grid-column: 2 / 6;
   grid-row: 2 / 3;
+  margin-top: -10%;
 }
 
 .header.container.one h1{
   color: #e7717d;
   text-decoration: underline;
-  font-size: 5rem;
+  font-size: 6rem;
+}
+
+.header.container.two{
+  position: absolute;
+  top: 90%;
+  left: 57%;
+}
+
+.header.container.two h1{
+  color: #e7717d;
+  text-decoration: underline;
+  font-size: 6rem;
+}
+
+.header.container.two h2 {
+  margin-left: 60%;
 }

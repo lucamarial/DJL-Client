@@ -52,3 +52,12 @@
 .sidebar ul a:focus {
   color: #e7717d;
 }
+
+.sidebar.contact{
+  top: 90%;
+  background-color: #e7717d;
+}
+
+.sidebar.contact h3{
+  padding: 45px;
+}
