@@ -1,7 +1,7 @@
 .grid.landingpage{
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(9, 17em);
+  grid-template-rows: repeat(10, 17em) 7vh;
   width: 100%;
 }
 
@@ -24,6 +24,24 @@
   background-position: 50% 30%;
 }
 
+.img.three {
+  grid-column: 4 / 9;
+  grid-row: 7 / 9;
+  background: #e7717d;
+  background: url('../../images/wahmenRespec.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img.four {
+  grid-column: 1 / 5;
+  grid-row: 9 / 11;
+  background: #e7717d;
+  background: url('../../images/artsyCam.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .header.container.one{
   grid-column: 2 / 6;
   grid-row: 2 / 3;
@@ -42,6 +60,12 @@
   left: 57%;
 }
 
+.header.container.three {
+  position: absolute;
+  left: 32.3%;
+  top: 183%;
+}
+
 .header.container.two h1{
   color: #e7717d;
   text-decoration: underline;
@@ -50,4 +74,15 @@
 
 .header.container.two h2 {
   margin-left: 60%;
+}
+
+.header.container.three h1 {
+  color: #e7717d;
+  text-decoration: underline;
+  font-size: 6rem;
+}
+
+.footerContainer {
+  background: blue;
+  grid-column: 11 / 1;
 }
