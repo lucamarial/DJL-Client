@@ -54,12 +54,12 @@
 }
 
 .sidebar.contact{
-  top: 93%;
+  bottom: 0;
 	background-color: #e7717d;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	height: 7%;
+	height: 4.3em;
 }
 
 .sidebar.contact h3{
