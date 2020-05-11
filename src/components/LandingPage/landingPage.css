@@ -40,11 +40,16 @@
   background: url('../../images/artsyCam.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 30% 50%;
+}
+
+.container.one.wrapper {
+  grid-column: 2 / 6;
+  grid-row: 2 / 3;
+  margin-top: -10%;
 }
 
 .header.container.one{
-  grid-column: 2 / 6;
-  grid-row: 2 / 3;
   margin-top: -10%;
 }
 
@@ -60,10 +65,34 @@
   left: 57%;
 }
 
+.header.two.content {
+  grid-column: 7 / 10;
+  grid-row: 5 / 6;
+  padding-right: 2em;
+}
+
 .header.container.three {
   position: absolute;
-  left: 32.3%;
-  top: 183%;
+  left: 33.7%;
+  top: 173%;
+}
+
+.header.three.content {
+  grid-column: 1 / 3;
+  grid-row: 7 / 9;
+  align-self: center;
+  padding-left: 5em;
+}
+
+.header.container.four {
+  position: absolute;
+  top: 230%;
+  left: 44%;
+}
+
+.header.four.content {
+  grid-column: 6/10;
+  grid-row: 10;
 }
 
 .header.container.two h1{
@@ -81,6 +110,20 @@
   text-decoration: underline;
   font-size: 6rem;
 }
+
+.header.container.three h2 {
+  margin-right: 30%;
+}
+
+.header.container.four h1 {
+  color: #e7717d;
+  text-decoration: underline;
+  font-size: 6rem;
+}
+
+.header.container.four h2 {
+  margin-left: 20%;
+} 
 
 .footerContainer {
   background: blue;
