@@ -5,7 +5,7 @@ import './navbar.css'
 const NavBar = () => {
   return (
     <>
-      <nav className='sidebar'>
+      <nav className='sidebar' data-aos='fade-right'>
         <p><NavLink to='/'>Home</NavLink></p>
         <ul>
           <li><NavLink className='main-link' to='/articles'>All Articles</NavLink></li>
