@@ -4,8 +4,14 @@ import NavBar from './components/NavBar';
 import LandingPage from './components/LandingPage';
 import AllArticles from './components/AllArticles';
 import SingleArticle from './components/SingleArticle';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const App = () => {
+	AOS.init({
+		duration: 1000
+	})
+	
 	return (
 		<div className='App'>
 			<NavBar />
