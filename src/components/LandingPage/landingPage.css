@@ -136,8 +136,3 @@
 .header.container.four h2 {
   margin-left: 20%;
 }
-
-.footerContainer {
-  background: blue;
-  grid-column: 11 / 1;
-}
