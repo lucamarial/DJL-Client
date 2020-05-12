@@ -24,7 +24,6 @@ const LandingPage = () => {
         </div>
         <div className='header two content'>
           <h2 data-aos='fade-right' data-aos-delay='1000'>Our journalists are the best for real!</h2>
-          <br />
           <p data-aos='fade-right' data-aos-delay='1500'>Techniques and methodologies used by trillion-dollar asset managers in the area of investment research and data analytics.</p>
         </div>
         <div className='header container three' data-aos='fade-right'>
@@ -32,15 +31,10 @@ const LandingPage = () => {
         </div>
         <div className='header three content'>
           <h2 data-aos='fade-right' data-aos-delay='1000'>Download mac cleaner now! Not virus we promise!</h2>
-          <br />
-          <br />
           <div>
             <p data-aos='fade-right' data-aos-delay='1200'>✓ Monetary policy analysis</p>
-            <br />
             <p data-aos='fade-right' data-aos-delay='1300'>✓ Real asset research</p>
-            <br />
             <p data-aos='fade-right' data-aos-delay='1400'>✓ Global rates market analysis</p>
-            <br />
             <p data-aos='fade-right' data-aos-delay='1500'>✓ Live via Bloomberg Terminal</p>
           </div>
         </div>
@@ -49,7 +43,6 @@ const LandingPage = () => {
         </div>
         <div className='header four content'>
           <h2 data-aos='fade-right' data-aos-delay='1000'>We are cewl gang gang</h2>
-          <br />
           <p data-aos='fade-right' data-aos-delay='1000'>Investment professionals with integrity and years of experience at the world’s top asset managers.</p>
         </div>
         <div className='footerContainer'>
